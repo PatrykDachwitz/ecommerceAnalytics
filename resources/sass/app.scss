@@ -6,3 +6,88 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+
+.app {
+  background-color: $gray-300;
+  overflow: hidden;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+
+  &-nav {
+    background-color: $white;
+    flex: 80px 0;
+  }
+
+  &-content {
+    flex: 1;
+  }
+}
+
+.report{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &-toolbar {
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-content {
+    flex: 1;
+    display: flex;
+  }
+
+
+  &-parameters {
+    background-color: $white;
+  }
+
+  &-analytics {background-color: $white;
+    flex: 1;
+  }
+}
+
+.searches-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: center;
+    white-space: nowrap;
+  }
+  &-input {
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    border: 0px;
+    appearance: none;
+    border-radius: 0.375rem;
+  }
+
+  &-input:active {
+    border: 0px;
+  }
+}
+
+.form-check-input{
+  width: 20px;
+  height: 20px;
+}
