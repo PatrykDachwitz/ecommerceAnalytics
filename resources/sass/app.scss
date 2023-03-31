@@ -21,12 +21,15 @@
   }
 
   &-content {
+    overflow: hidden;
     flex: 1;
   }
 }
 
 .report{
   height: 100%;
+  max-width: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   &-toolbar {
@@ -41,11 +44,12 @@
 
 
   &-parameters {
+    flex: 300px 0;
     background-color: $white;
   }
 
   &-analytics {background-color: $white;
-    flex: 1;
+    flex: 500px 1;
   }
 }
 
@@ -90,4 +94,24 @@
 .form-check-input{
   width: 20px;
   height: 20px;
+}
+.analytics {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  &-header {
+    border: 1px solid $gray-300;
+  }
+  &-content {
+    border: 1px solid $gray-300;
+  }
+  &-column {
+    &-border {
+      background-color: $gray-400;
+      min-width: 2px;
+      cursor: pointer;
+    }
+    display: flex;
+    flex-direction: column;
+  }
 }
